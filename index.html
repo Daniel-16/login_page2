@@ -20,32 +20,32 @@
 <div>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form id="signup-form">
 			<h1>Create Account</h1>
-			<div class="social-container">
+			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			</div> -->
+			<!-- <span>or use your email for registration</span> -->
+			<input type="text" placeholder="Name" id="signup-name" required />
+			<input type="email" placeholder="Email" id="signup-email" required />
+			<input type="password" placeholder="Password" id="signup-password" required />
+            <a style="text-decoration: underline; cursor: pointer;" id="show-signup-password">Show Password</a>
 			<button style="cursor: pointer;">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form id="login-form">
 			<h1>Sign in</h1>
-			<div class="social-container">
+			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#" class="forgot-password">Forgot your password?</a>
+			</div> -->
+			<input type="email" placeholder="Email" id="login-email" required />
+			<input type="password" placeholder="Password" id="login-password" required />
+			<!-- <a href="#" class="forgot-password">Forgot your password?</a> -->
 			<button style="cursor: pointer;">Sign In</button>
 		</form>
 	</div>
